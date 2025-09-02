@@ -1,0 +1,6 @@
+# ---------- dev ----------
+FROM base AS dev
+# Copy source (volume mount will override in dev)
+COPY app.py ./
+EXPOSE 8000
+CMD ["python", "app.py"]
